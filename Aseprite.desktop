@@ -5,7 +5,7 @@ Exec=~/Applications/Aseprite/aseprite
 GenericName=Aseprite
 Comment=Pixel Art Painting
 Type=Application
-Icon=~/Applications/Aseprite/Aseprite_logo_128.png
+Icon=~/Applications/Aseprite/aseprite_logo.png
 Categories=Graphics;2DGraphics;RasterGraphics;
 Terminal=false
 
