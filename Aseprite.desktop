@@ -1,0 +1,14 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Aseprite
+Exec=~/Applications/Aseprite/aseprite
+GenericName=Aseprite
+Comment=Pixel Art Painting
+Type=Application
+Icon=~/Applications/Aseprite/Aseprite_logo_128.png
+Categories=Graphics;2DGraphics;RasterGraphics;
+Terminal=false
+
+
+
+Name[en_US]=Aseprite.desktop
