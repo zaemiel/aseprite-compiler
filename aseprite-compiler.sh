@@ -56,7 +56,7 @@ compile_aseprite(){
 }
 
 create_application(){
-    mkdir -r $aseprite_dest_path
+    mkdir -p $aseprite_dest_path
     mv -v ~/aseprite/build/bin/* $aseprite_dest_path
     cd $aseprite_dest_path
     curl -LOJs "https://raw.githubusercontent.com/zaemiel/aseprite-compiler/master/aseprite_logo.png"
