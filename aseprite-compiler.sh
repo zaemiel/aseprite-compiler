@@ -72,8 +72,8 @@ clean(){
 
 apt_update
 install_aseprite_dependencies
-clone_asprite
 download_skia
+clone_asprite
 compile_aseprite
 create_application
 clean
