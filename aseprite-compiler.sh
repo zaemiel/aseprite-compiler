@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-aseprite_dest_path="~/Applications/Aseprite"
 
 apt_update(){
     sudo apt update
@@ -31,10 +30,9 @@ clone_asprite(){
 }
 
 download_skia(){
-    skia_dir="~/deps/skia"
     curl -Ls "https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-Linux-Release-x64-libc++.zip" -o skia.zip
-    mkdir -p $skia_dir
-    unzip skia.zip -d $skia_dir
+    mkdir -p ~/deps/skia
+    unzip skia.zip -d ~/deps/skia
     rm skia.zip
 }
 
@@ -58,9 +56,9 @@ compile_aseprite(){
 }
 
 create_application(){
-    mkdir -p $aseprite_dest_path
-    mv -v ~/aseprite/build/bin/* $aseprite_dest_path
-    cd $aseprite_dest_path
+    mkdir -p ~/Applications/Aseprite
+    mv -v ~/aseprite/build/bin/* ~/Applications/Aseprite
+    cd ~/Applications/Aseprite
     curl -LOJs "https://raw.githubusercontent.com/zaemiel/aseprite-compiler/master/aseprite_logo.png"
     cd ~/.local/share/applications/
     curl -LOJs "https://raw.githubusercontent.com/zaemiel/aseprite-compiler/master/Aseprite.desktop"
