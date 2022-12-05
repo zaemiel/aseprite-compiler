@@ -60,6 +60,9 @@ create_application(){
     mv -v ~/aseprite/build/bin/* $aseprite_dest_path
     cd $aseprite_dest_path
     curl -LOJs "https://raw.githubusercontent.com/zaemiel/aseprite-compiler/master/aseprite_logo.png"
+    cd ~/.local/share/applications/
+    curl -LOJs "https://raw.githubusercontent.com/zaemiel/aseprite-compiler/master/Aseprite.desktop"
+    cd ~
 }
 
 clean(){
