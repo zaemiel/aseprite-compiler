@@ -31,8 +31,10 @@ clone_asprite(){
 }
 
 download_skia(){
+    skia_dir="~/deps/skia"
     curl -Ls "https://github.com/aseprite/skia/releases/download/m102-861e4743af/Skia-Linux-Release-x64-libc++.zip" -o skia.zip
-    unzip skia.zip -d ~/deps/skia/
+    mkdir -p $skia_dir
+    unzip skia.zip -d $skia_dir
     rm skia.zip
 }
 
