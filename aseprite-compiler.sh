@@ -70,10 +70,10 @@ clean(){
     rm -rf ~/deps
 }
 
-apt_update()
-install_aseprite_dependencies()
-clone_asprite()
-download_skia()
-compile_aseprite()
-create_application()
-clean()
+apt_update
+install_aseprite_dependencies
+clone_asprite
+download_skia
+compile_aseprite
+create_application
+clean
