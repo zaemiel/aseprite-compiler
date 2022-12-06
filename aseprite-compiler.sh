@@ -68,11 +68,9 @@ Exec=$HOME/Applications/Aseprite/aseprite
 GenericName=Aseprite
 Comment=Pixel Art Painting
 Type=Application
-Icon=$HOME/Applications/Aseprite/Aseprite_logo_128.png
+Icon=$HOME/Applications/Aseprite/aseprite_logo.png
 Categories=Graphics;2DGraphics;RasterGraphics;
 Terminal=false
-
-Name[en_US]=Aseprite.desktop
 "
     echo "$desktop_content_file" > Aseprite.desktop
     cp Aseprite.desktop ~/.local/share/applications/
