@@ -60,9 +60,23 @@ create_application(){
     mv -v ~/aseprite/build/bin/* ~/Applications/Aseprite
     cd ~/Applications/Aseprite
     curl -LOJs "https://raw.githubusercontent.com/zaemiel/aseprite-compiler/master/aseprite_logo.png"
-    cd ~/.local/share/applications/
-    curl -LOJs "https://raw.githubusercontent.com/zaemiel/aseprite-compiler/master/Aseprite.desktop"
-    cd ~
+
+    desktop_content_file="
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Aseprite
+    Exec=$HOME/Applications/Aseprite/aseprite
+    GenericName=Aseprite
+    Comment=Pixel Art Painting
+    Type=Application
+    Icon=$HOME/Applications/Aseprite/Aseprite_logo_128.png
+    Categories=Graphics;2DGraphics;RasterGraphics;
+    Terminal=false
+
+    Name[en_US]=Aseprite.desktop
+    "
+    echo "$desktop_content_file" > Aseprite.desktop
+    cp Aseprite.desktop ~/.local/share/applications/
 }
 
 clean(){
